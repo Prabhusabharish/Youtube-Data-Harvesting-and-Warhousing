@@ -8,3 +8,21 @@ The challenge at hand is to develop a user-friendly Streamlit application enabli
 5. Ability to search and retrieve data from the SQL database using various search options, including joining tables to obtain detailed channel information.
 Approach:
 In essence, the overall approach entails constructing a straightforward user interface through Streamlit, retrieving data from the YouTube API Key, storing it in a MongoDB data lake, migrating it to a SQL data warehouse, querying the data warehouse with SQL, and seamlessly displaying the results within the Streamlit app. This streamlined approach ensures a user-friendly experience for data exploration and analysis across multiple YouTube channels.
+ 
+Key Technologies and Skills
+•	Python scripting
+•	Data Collection
+•	API integration
+•	Streamlit
+•	Data Management using MongoDB (Atlas) and SQL
+
+Installation
+•	To run this project, you need to install the following packages:
+•	pip install google-api-python-client
+•	pip install pymongo
+•	pip install pandas
+•	pip install psycopg2
+•	pip install streamlit
+
+
+
