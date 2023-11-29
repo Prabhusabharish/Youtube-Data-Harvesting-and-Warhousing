@@ -553,7 +553,7 @@ mydb = psycopg2.connect(host = "localhost",
 cursor = mydb.cursor()
 
 question = st.selectbox("Select your Question", ("1. Names of all Videos and their corrs channel",
-                                                 "2. A Channels have the most number of videos and no of  videos",
+                                                 "2. A Channels have the most number of videos and Total no of  videos",
                                                  "3. The top 10 Most views videos and their channels",
                                                  "4. No of Comments in each videos and their corrs video",
                                                  "5. The highest liked videos and their corrs channels",
@@ -580,7 +580,7 @@ if question == "1. Names of all Videos and their corrs channel" :
     st.write(df)
 
 # Q & A = 2
-elif question == "2. A Channels have the most number of videos and no of  videos" :
+elif question == "2. A Channels have the most number of videos and Total no of  videos" :
     query2 = "select Channel_Name as ChannelName,Total_Videos as NO_Videos from channels order by Total_Videos desc;"
     cursor.execute(query2)
     mydb.commit()
